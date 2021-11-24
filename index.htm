@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Fjord 500</title>
+        <style>
+            body{
+                color: #FFF;
+                text-align: center;
+                background-color: rgb(52, 109, 160);
+            }
+
+            h1 {
+                color: #FFF;
+            }
+
+            .points {
+                position: fixed;
+                font-size: 1.5em;
+                top: 10px;
+                right: 10px;
+            }
+
+            #answer {
+                display: none;
+                position: fixed;
+                left: 50%;
+                top: 50%;   
+                width: 300px;
+                height: 100px;
+                background-color: #FFF;
+                color: #000; 
+                font-size: 3em;
+                line-height: 100px;
+                margin-left: -150px;
+                margin-top: -50px;
+                border-radius: 20px;
+            }
+
+            section {
+                color: #FFF;
+            }
+
+            .column {
+                display: inline-block;
+                width: 45%;
+                min-height: 80vh;
+                vertical-align: top;
+                overflow: hidden;
+            }
+
+            .column.left > img {
+                width: 45vh;
+                height: auto;
+                margin: 30px;
+            }
+
+            .options > button {
+                width: 130px;
+                padding: 10px auto;
+            }
+
+            button {
+                color: #FFF;
+                border: solid 1px #FFF;
+                background-color: darkblue;
+                border-radius: 8px;
+                font-size: 1.4em;
+                padding: 10px 30px;
+                margin: 20px;
+            }
+            
+            button.next {
+                margin-top: 75px;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: rgb(54, 54, 153);
+            }
+
+        </style>
+
+        <script src="./app.js"></script>
+    </head>
+    <body>
+        <h1>Fjord 500</h1>
+        <p>
+            When you reach 500 points, you win!!!
+        </p>
+        <div class="points">
+            <span id="myPoints">0</span>/500 points
+        </div>
+        <div id="answer">
+            Correct!
+        </div>
+        <section>
+            <div class="column left">
+                <img id="horseImage" src="./photos/0001.jpg" />
+
+            </div>
+            <div class="column right">
+                <h3>Which Fjord is this?</h3>
+
+                <div class="options">
+                    <button onClick="handleButtonClick('Tillie')">
+                        Tillie
+                    </button>
+
+                    <button onClick="handleButtonClick('Einar')">
+                        Einar
+                    </button>
+
+                    <button onClick="handleButtonClick('Lars')">
+                        Lars
+                    </button>
+
+                    <button onClick="handleButtonClick('Toby')">
+                        Toby
+                    </button>
+
+                    <button onClick="handleButtonClick('Annie')">
+                        Annie
+                    </button>
+
+                    <button onClick="handleButtonClick('Udine')">
+                        Udine
+                    </button>
+
+                    <button onClick="handleButtonClick('Nanja')">
+                        Nanja
+                    </button>
+
+                    <button onClick="handleButtonClick('Electra')">
+                        Electra
+                    </button>
+
+                    <button onClick="handleButtonClick('Ibis')">
+                        Ibis
+                    </button>
+
+                    <button onClick="handleButtonClick('Letin')">
+                        Letin
+                    </button>
+                    
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>

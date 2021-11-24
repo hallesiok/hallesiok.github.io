@@ -39,12 +39,6 @@
                 color: #FFF;
             }
 
-            @media only screen and (max-width: 600px) {
-                .column {
-                    width: 100%;
-                }
-            }
-
             .column {
                 display: inline-block;
                 width: 45%;
@@ -81,6 +75,13 @@
             button:hover {
                 cursor: pointer;
                 background-color: rgb(54, 54, 153);
+            }
+
+            /* Mobile overrides */
+            @media only screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
             }
 
         </style>

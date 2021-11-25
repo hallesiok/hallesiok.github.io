@@ -3,26 +3,27 @@
         <title>Fjord 500</title>
         <style>
             body{
+                padding: 30px;
                 color: #FFF;
                 text-align: center;
                 background-color: rgb(52, 109, 160);
             }
 
-            h1 {
+            .header h1 {
                 text-align: left;
                 font-size: 4em;
                 color: #FFF;
             }
 
-            h3{
-                font-size: 3em;
-            }
-
-            .points {
+            .header .points {
                 position: fixed;
                 font-size: 4em;
                 top: 10px;
                 right: 10px;
+            }
+
+            h3{
+                font-size: 3em;
             }
 
             #answer {
@@ -47,14 +48,14 @@
 
             .horse-image-container {
                 display: block;
-                width: 70vw;
-                height: 70vw;
+                width: calc(100vw-60px);
+                height: calc(100vw-60px);
                 overflow: hidden;
                 margin: 0 auto;
             }
 
             .horse-image-container > img {
-                width: 70vw;
+                width: calc(100vw-60px);
                 height: auto;
                 margin: 30px;
             }
@@ -88,16 +89,21 @@
         <script src="./app.js"></script>
     </head>
     <body>
-        <h1>Fjord 500</h1>
+        <div class="header">
+            <h1>Fjord 500</h1>
+            <div class="points">
+                <span id="myPoints">0</span>/500 points
+            </div>
+        </div>
+
         <h3>
             When you reach 500 points, you win!!!
         </h3>
-        <div class="points">
-            <span id="myPoints">0</span>/500 points
-        </div>
+        
         <div id="answer">
             Correct!
         </div>
+
         <section>
             <div class="horse-image-container">
                 <img id="horseImage" src="./photos/0001.jpg" />

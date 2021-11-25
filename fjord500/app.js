@@ -28,7 +28,7 @@ const handleButtonClick = (horseName) => {
         myPoints = myPoints + 50;
         // alert("You're Correct!")
     } else {
-        myPoints = myPoints - 50;
+        myPoints = myPoints - 10;
         // alert("You're wrong.  Try again.")
     }
 
@@ -44,13 +44,13 @@ const handleButtonClick = (horseName) => {
 const showAnswerOverlay = (isCorrect) => {
     const element = document.getElementById("answer");
 
-    element.innerText = isCorrect ? "Correct!" : "Wrong!  Try again!"
+    element.innerText = isCorrect ? "Correct!" : "Wrong!"
 
     element.style.display = "block";
 
     setTimeout( () => {
         element.style.display = "none";
-    }, 1000)
+    }, 2000)
 
 }
 

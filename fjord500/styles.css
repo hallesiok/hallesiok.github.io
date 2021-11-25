@@ -1,3 +1,84 @@
-body {
-    background-color: blue;
+body{
+    padding: 30px;
+    color: #FFF;
+    text-align: center;
+    background-color: rgb(52, 109, 160);
+}
+
+.header h1 {
+    text-align: left;
+    font-size: 4em;
+    color: #FFF;
+}
+
+.header .points {
+    position: fixed;
+    font-size: 4em;
+    top: 30px;
+    right: 40px;
+}
+
+h3{
+    font-size: 5em;
+}
+
+#answer {
+    display: none;
+    position: fixed;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 8em;
+    line-height: 200px;
+    margin-left: -300px;
+    margin-top: 340px;
+    border-radius: 20px;
+}
+
+.horse-image-container {
+    display: block;
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 700px;
+    border: solid 20px #FFF;
+}
+
+.horse-image-container > img {
+    width: 700px;
+    height: auto;
+}
+
+.options > button {
+    width: 360px;
+    font-size: 5em;
+    color: #FFF;
+    background-color: #25257e;
+    border-radius: 8px;
+    padding: 11px 0px;
+    margin: 14px;
+    border: none;
+    border-radius: 40px;
+}
+
+button {
+    color: #FFF;
+    border: solid 1px #FFF;
+    background-color: darkblue;
+    border-radius: 8px;
+    font-size: 1.4em;
+    padding: 10px 30px;
+    margin: 20px;
+}
+
+button.next {
+    margin-top: 75px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(54, 54, 153);
 }
